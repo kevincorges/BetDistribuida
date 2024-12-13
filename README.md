@@ -18,24 +18,36 @@
 
 # 1. Introdução
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   Com o avanço da tecnologia e com a legalização e consequentemente, a popularização das chamadas 'bets online', onde você pode realizar apostas em diferentes modalidades, sejam elas de esportes ou jogos de azar. Este relatório apresenta um projeto de criação de uma BET Distribuída que permite aos usuários criar eventos para apostas, com odds que influenciam nos ganhos, além de poder realizar apostas em eventos criados por outros usuários, realizar depósitos que são acrescentados ao saldo total do usuário e também realizar saques do dinheiro ganho nas apostas.
 </p>
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   O sistema utiliza um sistema de contratos inteligentes em arquivos solidity, contendo as ações realizáveis por um usuário, realizando a comunicação com a BlockChain à partir do framework 'hardhat' para a transferência dos dados e realização dos testes das funções do contrato inteligente e por ser um sistema que utiliza-se de uma BlockChain, há por consequência a implementação do Consenso próprio do sistema de blocos em cadeia.
 </p>
 
 # 2. Fundamentação Teórica
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   Neste tópico, serão consolidados alguns conceitos utilizados dentro da arquitetura do sistema durante seu desenvolvimento, explicando o funcionamento e sua relação com o produto do Problema 'BET Distribuída'. Dentre os conceitos que serão abordados, podem ser citados as <i>BlockChain's</i>, explicações e conceitos de ferramentas que foram utilizadas para o desenvolvimento do projeto.
 </p>
 
 ## 2.1 <i>Ledger</i> Distribuído e <i>BlockChain</i>:
-<p style="text-align: justify;">
+<p style="text-align: justify">
   Um ledger distribuído é como um livro-razão digital compartilhado por múltiplos computadores em uma rede. Imagine um grande livro onde todas as transações são registradas e cada participante da rede possui uma cópia idêntica desse livro. A blockchain é um tipo específico de ledger distribuído que utiliza criptografia para garantir a segurança e a imutabilidade dos dados. Em uma blockchain, os registros são agrupados em "blocos" que são encadeados uns aos outros, formando uma cadeia de blocos. Isso faz com que a blockchain seja uma forma de Ledger Distribuído altamente segura e transparente, pois qualquer alteração em um bloco exigiria a modificação de todos os blocos subsequentes, o que é praticamente impossível.
 </p>
+
+<p style="text-align: justify">
+  No diagrama abaixo (Figura 1), pode ser observado como um novo bloco é integrado a uma BlockChain após uma nova solicitação de transação:
+</p>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/dd2f2523-ead4-4bb3-b027-5b51655dbee8" width="700px" />
+</div>
+
+<div align="center">
+  Figura 1: Diagrama de funcionamento de uma BlockChain 
+</div>
 
 ## 2.2 Consenso na <i>BlockChain</i>:
 <p style="text-align: jusfity">
@@ -48,7 +60,7 @@
 </p>
 
 ## 2.4 Contratos Inteligentes:
-<p style="text-align: justify;">
+<p style="text-align: justify">
   Contratos inteligentes são programas de computador que automatizam a execução de acordos. Eles são como receitas digitais que definem as regras de um contrato e são executadas automaticamente quando determinadas condições são cumpridas. A blockchain é a tecnologia que torna os contratos inteligentes possíveis. Ela funciona como um livro-razão digital compartilhado e imutável, onde todas as transações são registradas de forma transparente e segura. Ao serem armazenados na blockchain, os contratos inteligentes se beneficiam da descentralização, da segurança e da imutabilidade da tecnologia, garantindo que as cláusulas do contrato sejam cumpridas de forma autônoma e confiável. Em resumo, a blockchain fornece a base para a execução segura e transparente dos contratos inteligentes, revolucionando a forma como realizamos transações e acordos.
 </p>
 
@@ -59,7 +71,7 @@
 
 ## 3.1 O <i>Smart Contract</i> 'DescentralizedBet':
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   Para realizar a conexão com a BlockChain, foi desenvolvido um Smart Contract (Contrato Inteligente) nomeado de 'DescentralizedBet' que utiliza a linguagem própria da moeda Etherium, a 'Solidity', em sua versão mais atualizada (0.8.28). E dentro deste contrato estão contidos:
 </p>
 
@@ -99,24 +111,24 @@
 </ul>
 
 ## 3.3 Hardhat:
-<p style="text-align: justify;">
+<p style="text-align: justify">
   O Hardhat é um framework de desenvolvimento de Ethereum que simplifica significativamente o processo de criação, teste e depuração de contratos inteligentes. Ele oferece um ambiente de desenvolvimento local com ferramentas intuitivas e um ecossistema rico de plugins, permitindo que os desenvolvedores se concentrem na lógica dos seus contratos. Por meio dele, foi realizada a compilação do <i>smart contract</i> 'DescentralizedBet'. Além disso, por meio dele, também foram realizados os testes para analisar a execução das funções e emissão dos eventos do contrato.  
 </p>
 
 ## 3.4 Ganache:
-<p style="text-align: justify;">
+<p style="text-align: justify">
   O Ganache é uma ferramenta de desenvolvimento local que simula uma blockchain Ethereum, permitindo que desenvolvedores testem seus contratos inteligentes em um ambiente controlado e seguro antes de implantá-los em uma rede real. Ele oferece uma rede privada e personalizável, onde é possível criar contas, minerar blocos e interagir com os contratos de forma rápida e eficiente. O Hardhat, por sua vez, é um framework de desenvolvimento que facilita a criação, teste e depuração de contratos inteligentes, integrando-se perfeitamente com o Ganache. Ao utilizar o Hardhat em conjunto com o Ganache, os desenvolvedores podem compilar seus contratos, executar testes unitários e interagir com eles diretamente no ambiente de desenvolvimento local.
 </p>
 
 # 4. Resultados
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   O desenvolvimento do contrato inteligente DescentralizedBet resultou em uma solução funcional para um sistema de apostas descentralizado, que opera de maneira segura, transparente e sem a necessidade de intermediários. Durante o processo, os seguintes resultados foram alcançados:
 </p>
 
 ## 4.1 Implementação Funcional do Contrato:
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   O contrato foi desenvolvido com todas as funcionalidades essenciais, incluindo a criação de eventos, registro de apostas, resolução de resultados e retirada de fundos. A lógica de acesso foi corretamente configurada para garantir que apenas o proprietário do contrato possa criar e resolver eventos.
 </p>
 
@@ -147,15 +159,15 @@
 
 # 5. Conclusão
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   O desenvolvimento do contrato inteligente DescentralizedBet demonstrou como a tecnologia BlockChain pode ser aplicada para criar sistemas descentralizados de apostas, oferecendo transparência, segurança e imutabilidade. A implementação envolveu a criação de funcionalidades-chave como a criação de eventos, registro de apostas, resolução de resultados e retirada de fundos, todas gerenciadas de forma autônoma pelo contrato.
 </p>
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   O uso de ferramentas como Hardhat, junto com bibliotecas modernas como o ethers.js e os matchers avançados do Chai, foi essencial para garantir a confiabilidade do contrato por meio de testes robustos. Os testes   realizados cobriram cenários principais, incluindo casos de sucesso e falhas esperadas, como apostas inválidas e tentativas de resolução de eventos por usuários não autorizados. Além disso, o uso de ferramentas auxiliares como 'loadFixture' e simulações temporais com 'time.increaseTo' otimizou o processo de desenvolvimento e garantiu a consistência dos testes.
 </p>
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
   Apesar de o contrato estar funcional e apto para operar em um ambiente de produção, existem melhorias potenciais a serem exploradas. Um exemplo seria o desenvolvimento de uma interface amigável que permita ao usuário interagir de maneira intuitiva com o sistema de apostas, sem a necessidade de conhecimentos técnicos em blockchain. Uma interface gráfica (GUI) simplificada poderia facilitar a criação de eventos, realização de apostas e consultas de resultados, ampliando o alcance do sistema para um público mais amplo.
 </p>
 

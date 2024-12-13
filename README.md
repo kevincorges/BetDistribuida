@@ -23,7 +23,7 @@
 </p>
 
 <p style="text-align: justify">
-  O sistema utiliza um sistema de contratos inteligentes em arquivos solidity, contendo as ações realizáveis por um usuário, realizando a comunicação com a BlockChain à partir do framework 'hardhat' para a transferência dos dados e realização dos testes das funções do contrato inteligente e por ser um sistema que utiliza-se de uma BlockChain, há por consequência a implementação do Consenso próprio do sistema de blocos em cadeia.
+  O sistema utiliza um sistema de contratos inteligentes em arquivos solidity, contendo as ações realizáveis por um usuário, realizando a comunicação com a BlockChain à partir do framework 'hardhat' para a transferência dos dados e realização dos testes das funções do contrato inteligente e por ser um sistema que utiliza-se de uma BlockChain, onde há por consequência a implementação do Consenso próprio do sistema de blocos em cadeia.
 </p>
 
 # 2. Fundamentação Teórica
@@ -34,11 +34,16 @@
 
 ## 2.1 <i>Ledger</i> Distribuído e <i>BlockChain</i>:
 <p style="text-align: justify">
-  Um ledger distribuído é como um livro-razão digital compartilhado por múltiplos computadores em uma rede. Imagine um grande livro onde todas as transações são registradas e cada participante da rede possui uma cópia idêntica desse livro. A blockchain é um tipo específico de ledger distribuído que utiliza criptografia para garantir a segurança e a imutabilidade dos dados. Em uma blockchain, os registros são agrupados em "blocos" que são encadeados uns aos outros, formando uma cadeia de blocos. Isso faz com que a blockchain seja uma forma de Ledger Distribuído altamente segura e transparente, pois qualquer alteração em um bloco exigiria a modificação de todos os blocos subsequentes, o que é praticamente impossível.
+  Um ledger distribuído é como um "livro-razão" digital que é compartilhado por vários computadores em uma rede. Imagine um livro onde todas as transações são registradas e cada usuário da rede possui uma cópia idêntica desse livro. A BlockChain é um tipo específico de ledger distribuído que utiliza criptografia para garantir a segurança e a imutabilidade dos dados. Em uma blockchain, os registros são agrupados em "blocos" que são encadeados uns aos outros, formando uma cadeia. Isso faz com que a BlockChain seja uma forma de Ledger Distribuído altamente segura e transparente, pois qualquer alteração em um bloco exigiria a modificação de todos os blocos subsequentes, o que é praticamente impossível.
+</p>
+
+## 2.2 Consenso na <i>BlockChain</i>:
+<p style="text-align: jusfity">
+  O chamdo consenso, na BlockChain, é o mecanismo que garante que todos os usuários da rede concordem com o estado atual da cadeia de blocos. É como um acordo entre todos os membros sobre quais transações são válidas e devem ser adicionadas à BlockChain. Para que um novo bloco seja adicionado à cadeia, é necessário que uma determinada porcentagem dos participantes da rede valide e concorde com as informações contidas nesse bloco. Esse processo garante a segurança e a integridade da BlockChain, pois impede que um único participante ou um grupo de participantes possa manipular os dados da rede BlockChain.
 </p>
 
 <p style="text-align: justify">
-  No diagrama abaixo (Figura 1), pode ser observado como um novo bloco é integrado a uma BlockChain após uma nova solicitação de transação:
+  No diagrama abaixo (Figura 1), pode ser observado como um novo bloco é integrado a uma BlockChain, com o consenso após uma nova solicitação de transação:
 </p>
 
 <div align="center">
@@ -46,22 +51,17 @@
 </div>
 
 <div align="center">
-  Figura 1: Diagrama de funcionamento de uma BlockChain 
+  Figura 1: Diagrama de funcionamento de uma BlockChain à partir do Consenso. 
 </div>
-
-## 2.2 Consenso na <i>BlockChain</i>:
-<p style="text-align: jusfity">
-  O consenso na blockchain é o mecanismo que garante que todos os participantes da rede concordem com o estado atual da cadeia de blocos. É como um acordo entre todos os membros sobre quais transações são válidas e devem ser adicionadas à blockchain. Para que um novo bloco seja adicionado à cadeia, é necessário que uma determinada porcentagem dos participantes da rede valide e concordem com as informações contidas nesse bloco. Esse processo é fundamental para a segurança e a integridade da blockchain, pois impede que um único participante ou um grupo de participantes possa manipular os dados da rede.
-</p>
 
 ## 2.3 Aplicativos Descentralizados (DApps):
 <p style="text-align: jusfity">
-  DApps, ou aplicativos descentralizados, são programas que operam em redes blockchain. Ao contrário dos aplicativos tradicionais, que são centralizados e controlados por empresas, os DApps são distribuídos por uma rede de computadores, tornando-os mais seguros, transparentes e resistentes a falhas. Eles utilizam contratos inteligentes para automatizar regras e executar ações de forma autônoma, sem a necessidade de intermediários. Essa descentralização garante que os DApps sejam mais resistentes a censuras e ofereçam maior autonomia aos usuários, abrindo caminho para um futuro com sistemas financeiros, sociais e de governança mais justos e democráticos.
+  DApps, ou aplicativos descentralizados, são programas que operam em redes BlockChain. Ao contrário de aplicativos comuns, que são centralizados e controlados por empresas, os DApps são distribuídos por uma rede de computadores, tornando-os mais seguros, transparentes e resistentes a falhas. Eles utilizam contratos inteligentes para automatizar regras e executar ações de forma autônoma, sem a necessidade de intermediários. Essa descentralização garante que os DApps sejam mais resistentes a censuras e ofereçam maior autonomia aos usuários.
 </p>
 
 ## 2.4 Contratos Inteligentes:
 <p style="text-align: justify">
-  Contratos inteligentes são programas de computador que automatizam a execução de acordos. Eles são como receitas digitais que definem as regras de um contrato e são executadas automaticamente quando determinadas condições são cumpridas. A blockchain é a tecnologia que torna os contratos inteligentes possíveis. Ela funciona como um livro-razão digital compartilhado e imutável, onde todas as transações são registradas de forma transparente e segura. Ao serem armazenados na blockchain, os contratos inteligentes se beneficiam da descentralização, da segurança e da imutabilidade da tecnologia, garantindo que as cláusulas do contrato sejam cumpridas de forma autônoma e confiável. Em resumo, a blockchain fornece a base para a execução segura e transparente dos contratos inteligentes, revolucionando a forma como realizamos transações e acordos.
+  Contratos inteligentes são programas de computador que automatizam a execução de acordos. Eles são como acordos digitais que definem as regras de um contrato e são executadas automaticamente quando determinadas condições são cumpridas. A BlockChain é a tecnologia que torna os contratos inteligentes possíveis. Ao serem armazenados na BlockChain, os contratos inteligentes se beneficiam da descentralização, da segurança e da imutabilidade da tecnologia, garantindo que as cláusulas do contrato sejam cumpridas de forma autônoma e confiável. Em resumo, a BlockChain fornece a base para a execução segura e transparente dos contratos inteligentes.
 </p>
 
 # 3. Metodologia
@@ -112,12 +112,12 @@
 
 ## 3.3 Hardhat:
 <p style="text-align: justify">
-  O Hardhat é um framework de desenvolvimento de Ethereum que simplifica significativamente o processo de criação, teste e depuração de contratos inteligentes. Ele oferece um ambiente de desenvolvimento local com ferramentas intuitivas e um ecossistema rico de plugins, permitindo que os desenvolvedores se concentrem na lógica dos seus contratos. Por meio dele, foi realizada a compilação do <i>smart contract</i> 'DescentralizedBet'. Além disso, por meio dele, também foram realizados os testes para analisar a execução das funções e emissão dos eventos do contrato.  
+  O Hardhat é um framework de desenvolvimento de Ethereum que simplifica significativamente o processo de criação de smart contracts, além de testes e depuração. Ele oferece um ambiente de desenvolvimento local, permitindo que os desenvolvedores se concentrem na lógica dos seus contratos. Por meio dele, foi realizada a compilação do <i>smart contract</i> 'DescentralizedBet'. Além disso, também foram realizados os testes para analisar a execução das funções e emissão dos eventos do contrato.  
 </p>
 
 ## 3.4 Ganache:
 <p style="text-align: justify">
-  O Ganache é uma ferramenta de desenvolvimento local que simula uma blockchain Ethereum, permitindo que desenvolvedores testem seus contratos inteligentes em um ambiente controlado e seguro antes de implantá-los em uma rede real. Ele oferece uma rede privada e personalizável, onde é possível criar contas, minerar blocos e interagir com os contratos de forma rápida e eficiente. O Hardhat, por sua vez, é um framework de desenvolvimento que facilita a criação, teste e depuração de contratos inteligentes, integrando-se perfeitamente com o Ganache. Ao utilizar o Hardhat em conjunto com o Ganache, os desenvolvedores podem compilar seus contratos, executar testes unitários e interagir com eles diretamente no ambiente de desenvolvimento local.
+  O Ganache é uma ferramenta de desenvolvimento local que simula uma blockchain Ethereum, permitindo que os contratos inteligentes sejam testados em um ambiente controlado e seguro antes de implantá-los em uma rede real. Ele oferece uma rede privada e personalizável, onde é possível criar contas, minerar blocos e interagir com os contratos de forma rápida e eficiente. Combinado ao Hardhat, os desenvolvedores podem compilar seus contratos, executar testes unitários e interagir com eles diretamente no ambiente de desenvolvimento local do Ganache.
 </p>
 
 # 4. Resultados
@@ -129,7 +129,7 @@
 ## 4.1 Implementação Funcional do Contrato:
 
 <p style="text-align: justify">
-  O contrato foi desenvolvido com todas as funcionalidades essenciais, incluindo a criação de eventos, registro de apostas, resolução de resultados e retirada de fundos. A lógica de acesso foi corretamente configurada para garantir que apenas o proprietário do contrato possa criar e resolver eventos.
+  O contrato foi desenvolvido com todas as funcionalidades essenciais, incluindo a criação de eventos, registro de apostas, resolução de resultados e retirada de fundos. A lógica de acesso foi corretamente configurada para garantir que apenas o proprietário do contrato possa criar e resolver eventos e outros usuários possam realizar apostas.
 </p>
 
 ## 4.2 Cobertura de Testes Abrangente:
@@ -141,6 +141,7 @@
   <li>Apostas válidas e inválidas.</li>
   <li>Resolução de eventos por usuários autorizados e não autorizados.</li>
   <li>Retiradas bem-sucedidas e tentativas inválidas de saque.</li>
+  <li>Negação de Apostas cujo valor não condiz com o saldo do usuário.</li>
 </ul>
 
 ## 4.3. Desempenho:

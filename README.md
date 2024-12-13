@@ -138,6 +138,7 @@
  Os testes mostraram que o contrato atende aos requisitos de funcionamento esperados, com todas as funções operando corretamente sob condições normais e adversas. Foram realizados testes para verificar o comportamento do contrato em cenários reais e extremos, garantindo que ele responda corretamente em situações como:
 </p>
 <ul>
+  <li>Deploy do Contrato.</li>
   <li>Apostas válidas e inválidas.</li>
   <li>Resolução de eventos por usuários autorizados e não autorizados.</li>
   <li>Retiradas bem-sucedidas e tentativas inválidas de saque.</li>

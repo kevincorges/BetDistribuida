@@ -144,6 +144,18 @@
   <li>Negação de Apostas cujo valor não condiz com o saldo do usuário.</li>
 </ul>
 
+<p style="text-align: justify">
+  Na imagem a seguir (Figura 2), pode-se observar um print contendo os resultados dos testes implementados utilizando a ferramenta <i>HardHat</i> para testar a funcionalidade do Smart Contract (Contrato Inteligente):
+</p>
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/f6a8b978-9863-41e2-8acc-f299902f36ba" width="700px"/>
+</div>
+
+<div align="center">
+  Figura 2: Imagem dos testes realizados por meio do hardhat para viabilizar o contrato inteligente 'DescentralizedBet.sol'. 
+</div>
+
 ## 4.3. Desempenho:
 <p style="text-align: justify">
  O contrato foi projetado para otimizar custos de gas ao executar funções, garantindo um uso eficiente de recursos durante transações. O uso de ferramentas como 'loadFixture' e simulações de tempo contribuiu para um processo de teste mais rápido e eficiente.

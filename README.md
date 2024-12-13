@@ -189,15 +189,15 @@
 
 <ul>
 <li>
-  Ganache Documentation. Disponível em: https://trufflesuite.com/ganache/. Acesso em: 05/12/2024.
+  Documentação do Ganache. Disponível em: https://trufflesuite.com/ganache/. Acesso em: 05/12/2024.
 </li>
 
 <li>
-  Hardhat Documentation. Disponível em: https://hardhat.org/hardhat-runner/docs/overview. Acesso em: 05/12/2024.
+  Documentação do Hardhat. Disponível em: https://hardhat.org/hardhat-runner/docs/overview. Acesso em: 05/12/2024.
 </li>
 
 <li>
-  Solidity Documentation. Disponível em: https://docs.soliditylang.org/. Acesso em: 11/12/2024.
+  Documentação do Solidity. Disponível em: https://docs.soliditylang.org/. Acesso em: 11/12/2024.
 </li>
 
 <li>

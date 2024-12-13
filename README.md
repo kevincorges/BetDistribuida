@@ -132,6 +132,18 @@
   O contrato foi desenvolvido com todas as funcionalidades essenciais, incluindo a criação de eventos, registro de apostas, resolução de resultados e retirada de fundos. A lógica de acesso foi corretamente configurada para garantir que apenas o proprietário do contrato possa criar e resolver eventos e outros usuários possam realizar apostas.
 </p>
 
+<p style="text-align: justify">
+  Foi realizada a criação de um nó utilizando o hardhat a partir do comando "hardhat node" para confirmar que estava sendo conectado às contas da BlockChain local do Ganache, como pode ser visto na Figura 2:
+</p>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c47515f1-5f6e-4851-9606-f0a2b9fd1523" width="700px"/>
+</div>
+
+<div align="center">
+  Figura 2: Criação de um Nó na BlockChain Local do Ganache
+</div>
+
 ## 4.2 Cobertura de Testes Abrangente:
 
 <p style="text-align: justify">
@@ -146,7 +158,7 @@
 </ul>
 
 <p style="text-align: justify">
-  Na imagem a seguir (Figura 2), pode-se observar um print contendo os resultados dos testes implementados utilizando a ferramenta <i>HardHat</i> para testar a funcionalidade do Smart Contract (Contrato Inteligente):
+  Na imagem a seguir (Figura 3), pode-se observar um print contendo os resultados dos testes implementados utilizando a ferramenta <i>HardHat</i> para testar a funcionalidade do Smart Contract (Contrato Inteligente):
 </p>
 
 <div align="center">
@@ -154,7 +166,7 @@
 </div>
 
 <div align="center">
-  Figura 2: Imagem dos testes realizados por meio do hardhat para viabilizar o contrato inteligente 'DescentralizedBet.sol'. 
+  Figura 3: Imagem dos testes realizados por meio do hardhat para viabilizar o contrato inteligente 'DescentralizedBet.sol'. 
 </div>
 
 ## 4.3. Desempenho:

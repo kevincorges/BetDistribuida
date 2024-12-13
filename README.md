@@ -133,15 +133,15 @@
 </p>
 
 <p style="text-align: justify">
-  Foi realizada a criação de um nó utilizando o hardhat a partir do comando "hardhat node" para confirmar que estava sendo conectado às contas da BlockChain local do Ganache, como pode ser visto na Figura 2:
+  Foi realizada o Deploy do contrato utilizando o hardhat a partir do comando "npx hardhat run scripts/DecentralizedBet.js --network ganache" para confirmar que estava sendo conectado aos blocos da BlockChain local do Ganache, como pode ser visto na Figura 2:
 </p>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c47515f1-5f6e-4851-9606-f0a2b9fd1523" width="700px"/>
+  <img src="https://github.com/user-attachments/assets/bccd6466-10d3-49c6-be4f-088d2e8ffc5d" width="700px"/>
 </div>
 
 <div align="center">
-  Figura 2: Criação de um Nó na BlockChain Local do Ganache
+  Figura 2: Transações do Contrato BlockChain Local do Ganache
 </div>
 
 ## 4.2 Cobertura de Testes Abrangente:
